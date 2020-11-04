@@ -1,0 +1,48 @@
+//Responsive
+$mobileWidth: 560px;
+$tabletWidth: 768px;
+$desktopWidth: 1024px;
+
+@mixin mobile {
+    @media (min-width: #{$mobileWidth}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tabletWidth}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktopWidth}) {
+        @content;
+    }
+}
+
+#chart-container{
+	
+	.chart-wrapper{
+		width: 100vw;
+		height: 100vw;
+		border-bottom: 5px solid rgba(0,0,0,0.2);
+		//float: left;
+		@include tablet{
+			float: left;
+			margin: 10px;
+			width: 30vw;
+			height: 30vw;
+		} 
+
+		.area {
+			//fill: lightsteelblue;
+			stroke-width: 0;
+		}
+		
+		g.center-group {
+		    opacity: 0.2;
+		}
+	}
+
+}
