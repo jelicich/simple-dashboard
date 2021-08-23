@@ -1,0 +1,17 @@
+#chart-container .chart-wrapper {
+  width: 100vw;
+  height: 100vw;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2); }
+  @media (min-width: 768px) {
+    #chart-container .chart-wrapper {
+      float: left;
+      margin: 10px;
+      width: 30vw;
+      height: 30vw; } }
+  #chart-container .chart-wrapper .area {
+    stroke-width: 0; }
+  #chart-container .chart-wrapper g.center-group {
+    opacity: 0.2; }
+
+body {
+  font-family: 'Tahoma', Verdana, sans-serif; }
